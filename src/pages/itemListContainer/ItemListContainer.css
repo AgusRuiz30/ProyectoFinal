@@ -1,0 +1,9 @@
+h1 {
+  height: 88vh;
+  background-color: #ffe6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.1em;
+  color: #ad88c6;
+}
