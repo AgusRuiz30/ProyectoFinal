@@ -1,0 +1,96 @@
+.container-main-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.container-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 6px 38px -17px rgba(0, 0, 0, 0.55);
+  width: 80%;
+  max-width: 80em;
+  padding: 2em;
+  gap: 2em;
+}
+
+.slider-detail {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2em;
+}
+
+.container-detail-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  align-items: start;
+  justify-content: space-evenly;
+  gap: 1.5em;
+}
+
+.img-detail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-desc {
+  color: #505050;
+  font-size: 13px;
+}
+
+.tarjetas-envio {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon-envio {
+  font-size: 2em;
+}
+
+.envio-tarjetas-text {
+  font-size: 16px;
+}
+
+.buy-detail,
+.add-detail {
+  font-size: 1em;
+  width: 100%;
+  max-width: 17em;
+  padding: 1em;
+  border: none;
+  border-radius: 1.4em;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buy-detail {
+  background-color: #7469b6;
+}
+
+.add-detail {
+  background-color: #ad88c6;
+}
+
+.buttons-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.icon-tarj-envios {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2em;
+}
+
+.detail-text-envio {
+  margin-top: 1em;
+}

@@ -1,0 +1,59 @@
+.container-card {
+  width: 360px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 6px 38px -17px rgba(0, 0, 0, 0.55);
+  transition: all 0.5s;
+}
+
+.container-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-card:hover {
+  box-shadow: 3px 6px 38px -17px rgb(116, 105, 182, 0.75);
+}
+
+img {
+  width: 290px;
+}
+
+.vermas {
+  font-size: 1em;
+  width: 100%;
+  padding: 1.5em;
+  background-color: #e1afd1;
+  border: none;
+  color: #7469b6;
+  transition: all 0.5s;
+}
+
+.vermas:hover {
+  background-color: #7469b6;
+  color: #e1afd1;
+}
+
+.precio {
+  font-size: 2em;
+  color: #7469b6;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.2em;
+  padding: 20px;
+  color: #000;
+}
+.cuotas {
+  font-size: 1.2em;
+  color: #ad88c6;
+}
+
+.envio-gratis {
+  font-size: 1.2em;
+  color: #ad88c6;
+}
