@@ -3,6 +3,7 @@ import { Navbar } from "./components/NavBar/Navbar";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import ItemListContainer from "./pages/itemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./pages/itemDetailContainter/ItemDetailContainer";
+
 function App() {
   return (
     <BrowserRouter>
