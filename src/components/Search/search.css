@@ -1,0 +1,9 @@
+.container-search {
+  display: flex;
+}
+.btn-search {
+  border: none;
+  padding: 0.7em 2em;
+  background-color: #ad88c6;
+  color: #ffff;
+}

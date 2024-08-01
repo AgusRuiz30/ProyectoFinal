@@ -1,0 +1,29 @@
+.container-count {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.num-count {
+  height: 1.7em;
+  width: 2em;
+  background-color: #ad88c6;
+  text-align: center;
+  color: white;
+}
+
+.butt-count {
+  height: 3em;
+  width: 7em;
+  border: none;
+  background-color: #ad88c6;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.butt-count:hover {
+  background-color: #e1afd1;
+}

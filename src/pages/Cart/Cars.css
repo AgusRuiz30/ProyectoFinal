@@ -1,0 +1,90 @@
+.container-cart {
+  margin-top: 50px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.container-p {
+  padding: 40px;
+  gap: 3em;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.25);
+  width: 1200px;
+}
+
+.container-p-cars {
+  display: flex;
+  width: 1200px;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-p-cars {
+  width: 120px;
+}
+
+.container-counter-cars {
+  gap: 15px;
+  display: flex;
+}
+
+.but-remove {
+  display: flex;
+  align-items: center;
+  color: #ad88c6;
+  user-select: none;
+  text-align: center;
+}
+
+.price {
+  color: #ad88c6;
+}
+
+.container-resumen {
+  width: 400px;
+  box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-res {
+  width: 40px;
+}
+
+.res-products {
+  display: flex;
+  align-items: center;
+}
+
+.btn-f {
+  display: flex;
+  padding: 1em 1.4em;
+  border: none;
+  background-color: #ad88c6;
+  color: white;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-l {
+  display: flex;
+  padding: 1em 1.4em;
+  border: none;
+  background-color: #ad88c6;
+  color: white;
+  align-items: center;
+  gap: 5px;
+}
+
+.text-p-cart {
+  border-bottom: solid 1px black;
+}

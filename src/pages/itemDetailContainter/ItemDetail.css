@@ -65,18 +65,17 @@
   max-width: 17em;
   padding: 1em;
   border: none;
-  border-radius: 1.4em;
   color: white;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-.buy-detail {
+.add-detail {
   background-color: #7469b6;
 }
 
-.add-detail {
-  background-color: #ad88c6;
+.add-detail:hover {
+  background-color: #e1afd1;
 }
 
 .buttons-detail {

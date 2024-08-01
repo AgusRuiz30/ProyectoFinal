@@ -4,8 +4,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaRegCreditCard } from "react-icons/fa";
+import { CounterContainer } from "../../components/Counter/CounterContainer";
 
-const ItemDetail = ({ item }) => {
+const formatPrice = (price) => {
+  return new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS", // Cambia esto según la moneda que estés usando
+  }).format(price);
+};
+
+const ItemDetail = ({ item, onAdd, initial }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -27,14 +35,23 @@ const ItemDetail = ({ item }) => {
         </Slider>
         <div className="container-detail-text">
           <h2>{item.name}</h2>
-          <h3 className="precio">${item.price}</h3>
+          <h3 className="precio">{formatPrice(item.price)}</h3>
+          <div>
+            <b>Marca:</b>
+            <p className="text-desc">{item.marca}</p>
+          </div>
           <div>
             <b>Descripcion:</b>
             <p className="text-desc">{item.description}</p>
           </div>
           <div className="buttons-detail">
-            <button className="buy-detail">Comprar Ahora</button>
-            <button className="add-detail">Añadir Al Carrito</button>
+            <CounterContainer
+              initial={initial}
+              onAdd={onAdd}
+              incrementQuantity={() => {}}
+              decrementQuantity={() => {}}
+              stock={item.stock}
+            />
           </div>
           <div className="tarjetas-envio">
             <div className="icon-tarj-envios">
@@ -55,8 +72,8 @@ const ItemDetail = ({ item }) => {
                   Retiro en tienda o envío a domicilio
                 </h3>
                 <p className="text-desc">
-                  Pagá con Visa, Amex y Master en hasta 6 cuotas sin interés a $
-                  {Math.round(item.price / 6)}.
+                  Pagá con Visa, Amex y Master en hasta 6 cuotas sin interés de
+                  {formatPrice(item.price / 6)}.
                 </p>
               </div>
             </div>

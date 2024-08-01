@@ -1,0 +1,168 @@
+.container-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10em;
+  justify-content: center;
+  height: 80vh;
+}
+
+.form-container {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-2 {
+  display: flex;
+  width: 500px;
+  justify-content: stretch;
+}
+
+.form-b {
+  width: 300px;
+}
+
+.form-from {
+  gap: 2em;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-confirm {
+  display: flex;
+  padding: 1em 1.4em;
+  border: none;
+  background-color: #ad88c6;
+  color: white;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+}
+.btn-confirm:hover {
+  background-color: #7469b6;
+}
+
+.container-form-c {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.25);
+  padding: 4em 1em;
+  width: 500px;
+}
+.img-res {
+  width: 40px;
+}
+
+.res-products {
+  display: flex;
+  align-items: center;
+}
+.res-container {
+  width: 400px;
+  box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-form {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3.2em;
+}
+
+.icon-text {
+  font-size: 5em;
+}
+.comprobante-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.comprobante-header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.comprobante-id {
+  font-size: 1.2em;
+  color: #333;
+  margin: 1em 0;
+}
+
+.comprobante-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.comprobante-details h3 {
+  font-size: 1.2em;
+}
+
+.comprobante-footer {
+  margin-top: 1.5em;
+}
+
+.btn-back {
+  padding: 0.8em 1.2em;
+  border: none;
+  background-color: #ad88c6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #7469b6;
+}
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.success-message {
+  font-size: 2em;
+  color: #4caf50;
+  margin-top: 1em;
+}
+
+.check-icon {
+  font-size: 8em;
+  color: #4caf50;
+  animation: checkmark 0.6s ease-in-out;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,10 +1,22 @@
 import Badge from "@mui/material/Badge";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartcontext/CartContext";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+
 const CartWidget = () => {
+  const { cart } = useContext(CartContext);
   return (
-    <Badge badgeContent={0} color="secondary" showZero={true} className="logo">
-      <ShoppingCartIcon className="cart-icon" />
-    </Badge>
+    <Link to={"/cart"}>
+      <Badge
+        badgeContent={cart.length}
+        color="secondary"
+        showZero={true}
+        className="logo"
+      >
+        <LocalMallIcon className="cart-icon" />
+      </Badge>
+    </Link>
   );
 };
 export default CartWidget;

@@ -1,4 +1,3 @@
-import { FaSearch } from "react-icons/fa";
 import "./Navbar.css";
 import { Outlet, Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget.jsx";
@@ -15,22 +14,21 @@ export const Navbar = () => {
           />
         </Link>
         <ul className="container-tags">
-          <Link to="/" className="category-text">
-            TODOS
+          <Link to="/category/maquillaje" className="category-text">
+            MAQUILLAJE
           </Link>
-          <Link to="/category/ojos" className="category-text">
-            OJOS
+          <Link to="/category/joyeria" className="category-text">
+            JOYERÍA
           </Link>
-          <Link to="/category/labios" className="category-text">
-            LABIOS
+          <Link to="/category/ropa" className="category-text">
+            ROPA
           </Link>
-          <Link to="/category/rostro" className="category-text">
-            ROSTRO
+          <Link to="/category/accesorios" className="category-text">
+            ACCESORIOS
           </Link>
         </ul>
         <div className="logos">
-          <FaSearch className="logo" />
-          <CartWidget className="logo" />
+          <CartWidget className="logo " />
         </div>
       </div>
       <Outlet></Outlet>

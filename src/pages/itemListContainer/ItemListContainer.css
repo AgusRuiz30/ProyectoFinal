@@ -1,12 +1,20 @@
 .container-products-main {
-  margin: 10em;
+  margin: 6em 2em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(350px, 700px);
   padding: 0.5em;
+  width: 90vw;
 }
 
 .img-ad {
   width: 100%;
+}
+
+.container-list {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
